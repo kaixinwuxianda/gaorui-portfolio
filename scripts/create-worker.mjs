@@ -10,12 +10,12 @@ const worker = `export default {
 `
 
 const dist = new URL('../dist/', import.meta.url)
-const publicDir = new URL('../dist/public/', import.meta.url)
+const clientDir = new URL('../dist/client/', import.meta.url)
 
-await mkdir(publicDir, { recursive: true })
+await mkdir(clientDir, { recursive: true })
 for (const entry of await readdir(dist)) {
-  if (!['.openai', 'public', 'server'].includes(entry)) {
-    await rename(new URL(entry, dist), new URL(entry, publicDir))
+  if (!['.openai', 'client', 'server'].includes(entry)) {
+    await rename(new URL(entry, dist), new URL(entry, clientDir))
   }
 }
 
