@@ -50,6 +50,7 @@ function Home() {
   const homeRef = useRef(null)
   const go = id => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   const [copied, setCopied] = useState('')
+  const [showWechatNotice, setShowWechatNotice] = useState(() => /MicroMessenger/i.test(navigator.userAgent))
   const [loadedSlides, setLoadedSlides] = useState([true, false, false, false])
   useEffect(() => {
     let active = true
@@ -146,6 +147,12 @@ function Home() {
     } catch { window.prompt('Copy this text:', value) }
   }
   return <main ref={homeRef} className="home">
+    {showWechatNotice && <div className="wechat-notice" role="dialog" aria-modal="true" aria-labelledby="wechat-notice-text">
+      <div className="wechat-notice__panel">
+        <p id="wechat-notice-text">微信内置浏览器访问不稳定，请复制链接，粘贴到手机浏览器打开</p>
+        <button type="button" onClick={() => setShowWechatNotice(false)}>我知道了</button>
+      </div>
+    </div>}
     <section className="hero" id="top"><div className={`hero-slides ${slidesReady ? 'ready' : ''}`} aria-hidden="true">{heroSlides.map((source, index) => <img key={source} className={`hero-slide ${index % 2 === 0 ? 'zoom-in' : 'zoom-out'}`} src={loadedSlides[index] ? source : undefined} alt="" loading={index === 0 ? 'eager' : undefined} fetchPriority={index === 0 ? 'high' : undefined} decoding="async"/>)}</div><div className="hero-curtain hero-curtain--top" aria-hidden="true"/><div className="hero-curtain hero-curtain--bottom" aria-hidden="true"/><div className="hero-grain" /><Header onNavigate={go} /><div className="hero-content"><p className="eyebrow">PORTFOLIO / 2026</p><img className="hero-wordmark" src="/images/gaorui-mark.png" alt="Gao Rui" decoding="async" fetchPriority="high"/><div className="hero-foot"><p>Architect in formation<br/>based in Xi'an, China</p><button className="scroll" onClick={() => go('about')}>Scroll to explore <i>↓</i></button></div></div></section>
     <section className="about section motion-section" id="about"><p className="motion-heading" aria-hidden="true">ABOUT</p><p className="section-tag">&lt;About&gt; 个人简介</p><div className="about-card"><div className="about-visual"><ContentImage src="/images/portrait.jpg" alt="Portrait illustration of Gao Rui"/></div><div className="about-copy"><div className="about-identities"><p>高瑞 \ Gao Rui</p><p>B.Arch Candidate, Xi’an<br/>University of Architecture<br/>and Technology</p><p>西安建筑科技大学<br/>建筑学 大四 在读</p><p>4th-year Undergraduate<br/>Student, Architecture</p></div><p className="intro">As an architecture student, I believe that all design should first serve the authentic living and inhabitation experiences of ordinary people.</p><div className="stats"><div><strong>2026</strong><span>Portfolio<br/>edition</span></div><div><strong>Xi'an</strong><span>Based in<br/>China</span></div></div></div></div></section>
     <section className="projects section motion-section" id="projects"><p className="motion-heading" aria-hidden="true">PROJECTS</p><p className="section-tag">&lt;Projects&gt; 项目</p><div className="project-groups">{projectGroups.map(group => <div className="project-group" key={group.title}><h2>{group.title}</h2><div className="project-grid">{group.items.map(item => <ProjectItem item={item} key={item.label}/>)}</div></div>)}</div></section>
