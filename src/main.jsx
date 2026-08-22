@@ -10,7 +10,7 @@ ScrollTrigger.config({ limitCallbacks: true, ignoreMobileResize: true })
 const heroSlides = ['/images/hero.jpg', '/images/hero-slide-2.jpg', '/images/hero-slide-3.jpg', '/images/hero-slide-4.jpg']
 
 function ContentImage({ priority = false, ...props }) {
-  return <img loading={priority ? 'eager' : 'lazy'} decoding="async" {...props} />
+  return <img loading={priority ? 'eager' : 'lazy'} decoding="async" fetchPriority={priority ? 'high' : 'auto'} {...props} />
 }
 
 const projectGroups = [
@@ -38,7 +38,7 @@ const projectMap = Object.fromEntries(projectGroups.flatMap(group => group.items
 function Header({ onNavigate }) {
   const [open, setOpen] = useState(false)
   const navigate = target => { onNavigate(target); setOpen(false) }
-  return <header><button className="monogram" onClick={() => navigate('top')} aria-label="Back to top"><img src="/images/hello-mark.png" alt="Hello"/></button><nav className={open ? 'open' : ''}><button onClick={() => navigate('about')}>About</button><button onClick={() => navigate('projects')}>Projects</button><button onClick={() => navigate('contact')}>Contact</button></nav><button className="menu" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? '×' : '☰'}</button></header>
+  return <header><button className="monogram" onClick={() => navigate('top')} aria-label="Back to top"><img src="/images/hello-mark.png" alt="Hello" decoding="async" fetchPriority="high"/></button><nav className={open ? 'open' : ''}><button onClick={() => navigate('about')}>About</button><button onClick={() => navigate('projects')}>Projects</button><button onClick={() => navigate('contact')}>Contact</button></nav><button className="menu" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? '×' : '☰'}</button></header>
 }
 
 function ProjectItem({ item }) {
@@ -53,6 +53,10 @@ function Home() {
   const [showWechatNotice, setShowWechatNotice] = useState(() => /MicroMessenger/i.test(navigator.userAgent))
   const [loadedSlides, setLoadedSlides] = useState([true, false, false, false])
   useEffect(() => {
+    // On smaller screens, reserve bandwidth and GPU work for the first hero image.
+    // The desktop slideshow remains progressively loaded after the first paint.
+    if (window.matchMedia('(max-width: 750px), (prefers-reduced-motion: reduce)').matches) return undefined
+
     let active = true
     const preload = index => new Promise(resolve => {
       const image = new Image()
@@ -71,8 +75,8 @@ function Home() {
     })
     const start = () => Promise.all([1, 2, 3].map(preload))
     const idleId = 'requestIdleCallback' in window
-      ? window.requestIdleCallback(start, { timeout: 2200 })
-      : window.setTimeout(start, 900)
+      ? window.requestIdleCallback(start, { timeout: 3200 })
+      : window.setTimeout(start, 1800)
     return () => {
       active = false
       if ('cancelIdleCallback' in window) window.cancelIdleCallback(idleId)
@@ -93,7 +97,8 @@ function Home() {
 
   useLayoutEffect(() => {
     const root = homeRef.current
-    if (!root || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
+    const isCompact = window.matchMedia('(max-width: 750px)').matches
+    if (!root || window.matchMedia('(prefers-reduced-motion: reduce)').matches || isCompact) return undefined
 
     const context = gsap.context(() => {
       const hero = root.querySelector('.hero')
