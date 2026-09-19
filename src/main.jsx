@@ -239,6 +239,7 @@ function Project2026() {
 
 function ProjectVelux() {
   const awardLink = 'https://www.daylightandarchitecture.com/news/global-winner-light-of-tomorrow-by-velux-announced/'
+  const interviewLink = 'https://www.daylightandarchitecture.com/from-everyday-ritual-to-responsive-facade/'
   return <main className="project-page project-velux">
     <a className="project-back" href="/#projects">← back to portfolio</a>
     <div className="project-heading">
@@ -252,7 +253,10 @@ function ProjectVelux() {
       <video src="/images/5.3.mp4" poster="/images/5.2.jpg" controls playsInline preload="none" aria-label="Sun the Quilt video" />
       <ContentImage src="/images/5.4.jpg" alt="Sun the Quilt image three" />
     </div>
-    <a className="project-description project-award" href={awardLink} target="_blank" rel="noreferrer">该作品获2026 VELUX Light of tomorrow全球总冠军 <span aria-hidden="true">↗</span></a>
+    <div className="project-description project-award-list">
+      <a className="project-award" href={awardLink} target="_blank" rel="noreferrer">该作品获2026 VELUX Light of tomorrow全球总冠军 <span aria-hidden="true">↗</span></a>
+      <a className="project-award" href={interviewLink} target="_blank" rel="noreferrer">赛后采访 <span aria-hidden="true">↗</span></a>
+    </div>
   </main>
 }
 
