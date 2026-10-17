@@ -21,10 +21,10 @@ const projectGroups = [
     { label: '<2026>', slug: '2026', image: '/images/content4.jpg', title: 'Architectural Studies', hover: ['"Screenshot Saved"', '< 截屏已保存 >'] },
   ]},
   { title: '<团队项目>', items: [
-    { label: '2026 VELUX', slug: 'velux', image: '/images/content5.jpg', title: '2026 VELUX', hover: ['Sun the Quilt', '< 晒被子 >', '2026 Light of tomorrow', 'global winner'] },
-    { label: '无止桥营造公社', subtitle: 'Bridge to China', slug: 'bridge-village', image: '/images/content6.jpg', title: 'Wu Zhi Qiao · Qiaoshan Village', hover: ['Qiaoshan Village', '< 桥山村 >'] },
-    { label: '装置搭建', subtitle: 'Installation setup', slug: 'installation', image: '/images/content7.jpg', title: 'Installation Experiment', hover: ['Ting(Copter)', '< 蜓 >'] },
-    { label: '雪构节', subtitle: 'Snow structure', slug: 'snow-festival', image: '/images/content8.jpg', title: 'Snow Structure Festival', hover: ['Ember’s Embrace', '< 琥珀怀抱 >'] },
+    { label: '竞赛项目', slug: 'velux', image: '/images/content5.jpg', title: '2026 VELUX', hover: ['2026 LIght of Tomorrow by VELUX'] },
+    { label: '实习志愿活动', slug: 'bridge-village', image: '/images/content6.jpg', title: 'Wu Zhi Qiao · Qiaoshan Village', hover: ['Qiaoshan village', '桥山村项目', 'Bridge to China Annual Interflow Camp', '无止桥年度交流营'] },
+    { label: '策展', slug: 'installation', image: '/images/content7.jpg', title: 'Joint Exhibition of Three Societies 2026 社团联展', hover: ['Joint Exhibition of Three Societies 2026', '社团联展'] },
+    { label: '建造节', slug: 'snow-festival', image: '/images/content8.jpg', title: 'Installation setup and snow structure', hover: ['installation setup', '装置搭建', 'snow structure', '雪构节'] },
   ]},
   { title: '<延伸领域>', items: [
     { label: '建筑摄影', subtitle: 'Architecture Photography', slug: 'architecture-photography', image: '/images/content9.jpg', title: 'Architectural Photography', hover: ['Not only architecture', '< 杂七杂八 >'] },
@@ -132,8 +132,6 @@ function Home() {
           .from(revealItems, { y: 86, opacity: 0, scale: 0.965, duration: 1.1, stagger: isProjects ? 0.075 : 0.13, ease: 'power4.out', clearProps: 'transform,opacity' }, 0.25)
           .from(imageFrames, { yPercent: isProjects ? 0 : 7, scale: isProjects ? 1.1 : 1.035, duration: 1.22, stagger: isProjects ? 0.07 : 0.12, ease: 'power4.out', clearProps: 'transform' }, 0.34)
 
-        const portrait = section.querySelector('.about-visual img')
-        if (portrait) gsap.to(portrait, { yPercent: -7, ease: 'none', scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 0.9 } })
       })
 
     }, root)
@@ -159,7 +157,25 @@ function Home() {
       </div>
     </div>}
     <section className="hero" id="top"><div className={`hero-slides ${slidesReady ? 'ready' : ''}`} aria-hidden="true">{heroSlides.map((source, index) => <img key={source} className={`hero-slide ${index % 2 === 0 ? 'zoom-in' : 'zoom-out'}`} src={loadedSlides[index] ? source : undefined} alt="" loading={index === 0 ? 'eager' : undefined} fetchPriority={index === 0 ? 'high' : undefined} decoding="async"/>)}</div><div className="hero-curtain hero-curtain--top" aria-hidden="true"/><div className="hero-curtain hero-curtain--bottom" aria-hidden="true"/><div className="hero-grain" /><Header onNavigate={go} /><div className="hero-content"><p className="eyebrow">PORTFOLIO / 2026</p><img className="hero-wordmark" src="/images/gaorui-mark.png" alt="Gao Rui" decoding="async" fetchPriority="high"/><div className="hero-foot"><p>Architect in formation<br/>based in Xi'an, China</p><button className="scroll" onClick={() => go('about')}>Scroll to explore <i>↓</i></button></div></div></section>
-    <section className="about section motion-section" id="about"><p className="motion-heading" aria-hidden="true">ABOUT</p><p className="section-tag">&lt;About&gt; 个人简介</p><div className="about-card"><div className="about-visual"><ContentImage src="/images/portrait.jpg" alt="Portrait illustration of Gao Rui"/></div><div className="about-copy"><div className="about-identities"><p>高瑞 \ Gao Rui</p><p>B.Arch Candidate, Xi’an<br/>University of Architecture<br/>and Technology</p><p>西安建筑科技大学<br/>建筑学 大四 在读</p><p>4th-year Undergraduate<br/>Student, Architecture</p></div><p className="intro">As an architecture student, I believe that all design should first serve the authentic living and inhabitation experiences of ordinary people.</p><div className="stats"><div><strong>2026</strong><span>Portfolio<br/>edition</span></div><div><strong>Xi'an</strong><span>Based in<br/>China</span></div></div></div></div></section>
+    <section className="about section motion-section" id="about">
+      <p className="motion-heading" aria-hidden="true">ABOUT</p>
+      <p className="section-tag">&lt;About&gt; 个人简介</p>
+      <div className="about-card">
+        <div className="about-visual">
+          <ContentImage src="/images/portrait.jpg" alt="Gao Rui at UIA Barcelona 2026"/>
+          <ContentImage className="about-barcelona" src="/images/barcelona.png" alt="2026 UIA Barcelona"/>
+        </div>
+        <div className="about-copy">
+          <div className="about-identities">
+            <p>高瑞 \ Gao Rui</p>
+            <p>B.Arch Candidate, Xi’an<br/>University of Architecture<br/>and Technology</p>
+            <p>西安建筑科技大学<br/>建筑学 大四 在读</p>
+            <p>4th-year Undergraduate<br/>Student, Architecture</p>
+          </div>
+          <div className="stats"><div><strong>2026</strong><span>Portfolio<br/>edition</span></div><div><strong>Xi'an</strong><span>Based in<br/>China</span></div></div>
+        </div>
+      </div>
+    </section>
     <section className="projects section motion-section" id="projects"><p className="motion-heading" aria-hidden="true">PROJECTS</p><p className="section-tag">&lt;Projects&gt; 项目</p><div className="project-groups">{projectGroups.map(group => <div className="project-group" key={group.title}><h2>{group.title}</h2><div className="project-grid">{group.items.map(item => <ProjectItem item={item} key={item.label}/>)}</div></div>)}</div></section>
     <section className="contact section motion-section" id="contact"><p className="motion-heading" aria-hidden="true">CONTACT</p><p className="section-tag">&lt;Contact&gt; 联系</p><div className="contact-content"><div className="contact-row"><img src="/images/contact-wechat.png" alt="WeChat"/><span className="contact-label">微信 / <span className="contact-name">wechat</span></span><span className="contact-colon">:</span><b>kaixinwuxianda</b><button onClick={() => copy('kaixinwuxianda', 'wechat')}>{copied === 'wechat' ? 'Copied' : 'Copy'}</button></div><div className="contact-row"><img src="/images/contact-email.png" alt="Email"/><span className="contact-label">邮箱 / <span className="contact-name">Email</span></span><span className="contact-colon">:</span><b>2879937105@qq.com</b><button onClick={() => copy('2879937105@qq.com', 'email')}>{copied === 'email' ? 'Copied' : 'Copy'}</button></div><div className="contact-row"><img src="/images/contact-red.png" alt="Xiaohongshu"/><span className="contact-label">小红书 / <span className="contact-name">RED</span></span><span className="contact-colon">:</span><a href="https://www.xiaohongshu.com/user/profile/61f506050000000010004e00?wechatWid=b28a76efa0d7ccca0fade9a8c01f87ca" target="_blank" rel="noreferrer"><b>mikey0030</b></a><a className="external" href="https://www.xiaohongshu.com/user/profile/61f506050000000010004e00?wechatWid=b28a76efa0d7ccca0fade9a8c01f87ca" target="_blank" rel="noreferrer" aria-label="Open Xiaohongshu profile">↗</a></div><div className="contact-row"><img src="/images/contact-instagram.png" alt="Instagram"/><span className="contact-label"><span className="contact-name">Instagram</span></span><span className="contact-colon">:</span><a href="https://www.instagram.com/kaixinwuxianda" target="_blank" rel="noreferrer"><b>kaixinwuxianda</b></a><a className="external" href="https://www.instagram.com/kaixinwuxianda" target="_blank" rel="noreferrer" aria-label="Open Instagram profile">↗</a></div></div><footer><span>© Gao Rui 2026</span><button onClick={() => go('top')}>Back to top ↑</button></footer></section>
   </main>
@@ -274,6 +290,17 @@ function ProjectBridgeVillage() {
       <ContentImage src="/images/6.3.jpg" alt="Qiaoshan Village Community Activity Center Design image three" />
     </div>
     <p className="project-description">该项目正在施工中（2026.8）<ContentImage className="construction-mark" src="/images/under-construction.png" alt="Under construction" /></p>
+    <section className="project-entry" id="annual-interflow-camp">
+      <div className="project-heading">
+        <h1>&lt;无止桥年度交流营&gt;</h1>
+        <h2>Bridge to China Annual Interflow Camp</h2>
+      </div>
+      <div className="project-images">
+        <ContentImage src="/images/6.4.jpg" alt="Bridge to China Annual Interflow Camp image one" />
+        <ContentImage src="/images/6.5.jpg" alt="Bridge to China Annual Interflow Camp image two" />
+        <ContentImage src="/images/6.6.jpg" alt="Bridge to China Annual Interflow Camp image three" />
+      </div>
+    </section>
   </main>
 }
 
@@ -281,16 +308,10 @@ function ProjectInstallation() {
   return <main className="project-page project-installation">
     <a className="project-back" href="/#projects">← back to portfolio</a>
     <div className="project-heading">
-      <p className="project-meta">&lt;team work 团队项目&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;installation&gt;</p>
-      <h1>&lt;蜓(Ting)&gt;</h1>
-      <h2>installation setup</h2>
+      <p className="project-meta">&lt;team work 团队项目&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;策展&gt;</p>
+      <h1>策划进行中</h1>
+      <h2>Under Planning...</h2>
     </div>
-    <div className="project-images">
-      <ContentImage src="/images/7.1.jpg" alt="Ting installation image one" />
-      <video src="/images/7.2.mp4" poster="/images/7.1.jpg" controls playsInline preload="none" aria-label="Ting installation video" />
-      <ContentImage src="/images/7.3.jpg" alt="Ting installation image two" />
-    </div>
-    <p className="project-description">项目位于陕西省西安市长安区黄良街办立邵村立元东路1号</p>
   </main>
 }
 
@@ -307,13 +328,25 @@ function ProjectSnowFestival() {
       <ContentImage src="/images/8.2.jpg" alt="Snow Structure Festival image two" />
     </div>
     <p className="project-description">... ...</p>
+    <section className="project-entry">
+      <div className="project-heading">
+        <h1>&lt;蜓(Ting)&gt;</h1>
+        <h2>installation setup</h2>
+      </div>
+      <div className="project-images">
+        <ContentImage src="/images/8.3.jpg" alt="Ting installation image one" />
+        <video src="/images/8.4.mp4" poster="/images/8.3.jpg" controls playsInline preload="none" aria-label="Ting installation video" />
+        <ContentImage src="/images/8.5.jpg" alt="Ting installation image two" />
+      </div>
+      <p className="project-description">项目位于陕西省西安市长安区黄良街办立邵村立元东路1号</p>
+    </section>
   </main>
 }
 
 const galleryProjects = {
   'architecture-photography': { className: 'photo-columns', images: ['9.1.jpg', '9.2.jpg', '9.3.jpg', '9.4.jpg'], alt: 'Architecture photography' },
   'graphic-works': { className: 'photo-columns', images: ['10.1.jpg', '10.2.jpg', '10.3.jpg', '10.4.jpg'], alt: 'Graphic work' },
-  'model-making': { className: 'gallery-single', images: ['11.1.jpg', '11.2.jpg'], alt: 'Model making' },
+  'model-making': { className: 'gallery-single gallery-narrow', images: ['11.1.jpg', '11.2.jpg', '11.3.jpg', '11.4.jpg'], alt: 'Model making' },
   'direction-exploration': { className: 'gallery-single gallery-narrow', images: ['12.1.jpg', '12.2.jpg', '12.3.jpg'], alt: 'Direction exploration' },
 }
 

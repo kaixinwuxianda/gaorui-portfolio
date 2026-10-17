@@ -1,0 +1,81 @@
+{"kind":"deck","id":"pr/oxtejz","name":"Deck"}
+{"kind":"layout","layoutId":"352ceca7-1f47-4045-b17e-d9d3fa39acaa","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"09eadd97-80db-4276-af11-2c1edf0d1094","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/nol6nx","slide":1,"title":"主音乐厅：狭长空间、侧墙浮雕与舞台反射罩共同塑造声场","textShapes":15}
+{"kind":"shape","id":"sh/gr6pora1","slide":1,"bbox":[0,592,730,128]}
+{"kind":"textbox","id":"sh/hsfqxwrm","slide":1,"text":"主音乐厅：狭长空间、侧墙浮雕与舞台反射罩共同塑造声场","textPreview":"主音乐厅：狭长空间、侧墙浮雕与舞台反射罩共同塑造声场","textChars":26,"textLines":1,"bbox":[38,658,650,28]}
+{"kind":"shape","id":"sh/6l47ixsz","slide":1,"bbox":[730,0,550,720]}
+{"kind":"shape","id":"sh/7md8r2tk","slide":1,"bbox":[730,0,5,720]}
+{"kind":"textbox","id":"sh/8n6pk7a5","slide":1,"text":"案例 01  瑞士·卢塞恩  1998–2000","textPreview":"案例 01  瑞士·卢塞恩  1998–2000","textChars":24,"textLines":1,"bbox":[780,38,430,30]}
+{"kind":"textbox","id":"sh/tofqtcbq","slide":1,"text":"卢塞恩文化与会议中心","textPreview":"卢塞恩文化与会议中心","textChars":10,"textLines":1,"bbox":[780,76,435,78]}
+{"kind":"textbox","id":"sh/qh87u1s3","slide":1,"text":"耦合空间让混响可调","textPreview":"耦合空间让混响可调","textChars":9,"textLines":1,"bbox":[780,158,435,44]}
+{"kind":"shape","id":"sh/rih8369o","slide":1,"bbox":[780,214,430,0]}
+{"kind":"textbox","id":"sh/nah0rqxg","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[780,236,48,50]}
+{"kind":"textbox","id":"sh/298ji5gb","slide":1,"text":"空间","textPreview":"空间","textChars":2,"textLines":1,"bbox":[842,237,360,28]}
+{"kind":"textbox","id":"sh/pcjit0fm","slide":1,"text":"鞋盒式大厅保持较近的侧墙距离，为观众提供清晰的侧向反射。","textPreview":"鞋盒式大厅保持较近的侧墙距离，为观众提供清晰的侧向反射。","textChars":28,"textLines":1,"bbox":[842,267,365,74]}
+{"kind":"textbox","id":"sh/oba1kvy1","slide":1,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[780,350,48,50]}
+{"kind":"textbox","id":"sh/be10vaxs","slide":1,"text":"界面","textPreview":"界面","textChars":2,"textLines":1,"bbox":[842,351,360,28]}
+{"kind":"textbox","id":"sh/adsjm5g7","slide":1,"text":"墙面石膏浮雕打散镜面反射，舞台上方反射罩帮助演奏者互听。","textPreview":"墙面石膏浮雕打散镜面反射，舞台上方反射罩帮助演奏者互听。","textChars":28,"textLines":1,"bbox":[842,381,365,74]}
+{"kind":"textbox","id":"sh/xgjixkfy","slide":1,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[780,464,48,50]}
+{"kind":"textbox","id":"sh/wfa1ofyd","slide":1,"text":"调节","textPreview":"调节","textChars":2,"textLines":1,"bbox":[842,465,360,28]}
+{"kind":"textbox","id":"sh/j210zaxo","slide":1,"text":"大厅与附加混响室通过可控开口连接，可改变声音的延续程度。","textPreview":"大厅与附加混响室通过可控开口连接，可改变声音的延续程度。","textChars":28,"textLines":1,"bbox":[842,495,365,74]}
+{"kind":"shape","id":"sh/y1sjqpgj","slide":1,"bbox":[780,604,430,76]}
+{"kind":"textbox","id":"sh/uxw3y90r","slide":1,"text":"听觉结果：声音清晰而丰满，并能适应不同规模的音乐作品","textPreview":"听觉结果：声音清晰而丰满，并能适应不同规模的音乐作品","textChars":26,"textLines":1,"bbox":[800,616,390,52]}
+{"kind":"textbox","id":"sh/vy54rehw","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1214,680,32,18]}
+{"kind":"image","id":"im/a10zm98z","slide":1,"name":"","alt":"卢塞恩文化与会议中心主音乐厅演出场景","bbox":[0,0,730,720]}
+{"kind":"notes","id":"nt/nol6nx","slide":1,"text":"内容来源：\nhttps://www.kkl-luzern.ch/en/about-us/architecture-acoustics\nhttps://www.jeannouvel.com/en/projects/centre-de-culture-et-des-congres/\n图片来源：KKL Luzern，https://business.kkl-luzern.ch/en/venues/concert-hall"}
+{"kind":"slide","id":"sl/ts14lt","slide":2,"title":"葡萄园式布局：观众席分区围绕舞台，反射面靠近听众","textShapes":15}
+{"kind":"shape","id":"sh/5sfytsry","slide":2,"bbox":[0,592,730,128]}
+{"kind":"textbox","id":"sh/k76x0nqd","slide":2,"text":"葡萄园式布局：观众席分区围绕舞台，反射面靠近听众","textPreview":"葡萄园式布局：观众席分区围绕舞台，反射面靠近听众","textChars":24,"textLines":1,"bbox":[38,658,650,28]}
+{"kind":"shape","id":"sh/7uhgv29o","slide":2,"bbox":[730,0,550,720]}
+{"kind":"shape","id":"sh/6tof2x8j","slide":2,"bbox":[730,0,5,720]}
+{"kind":"textbox","id":"sh/twzyxsru","slide":2,"text":"案例 02  丹麦·哥本哈根  2002–2009","textPreview":"案例 02  丹麦·哥本哈根  2002–2009","textChars":25,"textLines":1,"bbox":[780,38,430,30]}
+{"kind":"textbox","id":"sh/svqhonq9","slide":2,"text":"丹麦广播音乐厅","textPreview":"丹麦广播音乐厅","textChars":7,"textLines":1,"bbox":[780,76,435,78]}
+{"kind":"textbox","id":"sh/nydgjy9k","slide":2,"text":"梯田式座席组织早期反射","textPreview":"梯田式座席组织早期反射","textChars":11,"textLines":1,"bbox":[780,158,435,44]}
+{"kind":"shape","id":"sh/mx4fqtsz","slide":2,"bbox":[780,214,430,0]}
+{"kind":"textbox","id":"sh/sr2xwryp","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[780,236,48,50]}
+{"kind":"textbox","id":"sh/dsbepwfa","slide":2,"text":"空间","textPreview":"空间","textChars":2,"textLines":1,"bbox":[842,237,360,28]}
+{"kind":"textbox","id":"sh/qpkvuhgj","slide":2,"text":"葡萄园式座席围绕中央舞台，缩短观众与声源的视觉和听觉距离。","textPreview":"葡萄园式座席围绕中央舞台，缩短观众与声源的视觉和听觉距离。","textChars":29,"textLines":1,"bbox":[842,267,365,74]}
+{"kind":"textbox","id":"sh/rqtwnmx4","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[780,350,48,50]}
+{"kind":"textbox","id":"sh/0vmx0byl","slide":2,"text":"反射","textPreview":"反射","textChars":2,"textLines":1,"bbox":[842,351,360,28]}
+{"kind":"textbox","id":"sh/1wvetwf6","slide":2,"text":"座席高差形成矮墙和倾斜界面，为不同分区补充较早到达的反射声。","textPreview":"座席高差形成矮墙和倾斜界面，为不同分区补充较早到达的反射声。","textChars":30,"textLines":1,"bbox":[842,381,365,74]}
+{"kind":"textbox","id":"sh/etkfy1gv","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[780,464,48,50]}
+{"kind":"textbox","id":"sh/fudwr6x0","slide":2,"text":"适应","textPreview":"适应","textChars":2,"textLines":1,"bbox":[842,465,360,28]}
+{"kind":"textbox","id":"sh/gzido7yh","slide":2,"text":"高大容积保留余韵，可调舞台反射板和吸声帘适配不同节目。","textPreview":"高大容积保留余韵，可调舞台反射板和吸声帘适配不同节目。","textChars":27,"textLines":1,"bbox":[842,495,365,74]}
+{"kind":"shape","id":"sh/h0rehcf2","slide":2,"bbox":[780,604,430,76]}
+{"kind":"textbox","id":"sh/x4z2543e","slide":2,"text":"听觉结果：声音更直接、亲近，观众获得较强的共同参与感","textPreview":"听觉结果：声音更直接、亲近，观众获得较强的共同参与感","textChars":26,"textLines":1,"bbox":[800,616,390,52]}
+{"kind":"textbox","id":"sh/w3qlwzm9","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1214,680,32,18]}
+{"kind":"image","id":"im/7mho7y58","slide":2,"name":"","alt":"丹麦广播音乐厅暖色木质大厅与环绕舞台的观众席","bbox":[0,0,730,720]}
+{"kind":"notes","id":"nt/ts14lt","slide":2,"text":"内容来源：\nhttps://www.nagata-i.com/portfolio/danish-radio-concert-hall/\nhttps://www.acoustics.asn.au/conference_proceedings/ICA2010/cdrom-ISRA2010/Papers/P3e.pdf\n图片来源：DR Koncerthuset，https://billet.drkoncerthuset.dk/venue/koncertsalen/"}
+{"kind":"slide","id":"sl/qpg933","slide":3,"title":"悬浮楼座位于更大的厅堂容积中，内外两层共同组织反射声","textShapes":15}
+{"kind":"shape","id":"sh/4fyl47a5","slide":3,"bbox":[0,592,730,128]}
+{"kind":"textbox","id":"sh/pg72xcrq","slide":3,"text":"悬浮楼座位于更大的厅堂容积中，内外两层共同组织反射声","textPreview":"悬浮楼座位于更大的厅堂容积中，内外两层共同组织反射声","textChars":26,"textLines":1,"bbox":[38,658,650,28]}
+{"kind":"shape","id":"sh/qhg36hsb","slide":3,"bbox":[730,0,550,720]}
+{"kind":"shape","id":"sh/ripkzm9w","slide":3,"bbox":[730,0,5,720]}
+{"kind":"textbox","id":"sh/cjyl8rah","slide":3,"text":"案例 03  法国·巴黎  2007–2015","textPreview":"案例 03  法国·巴黎  2007–2015","textChars":23,"textLines":1,"bbox":[780,38,430,30]}
+{"kind":"textbox","id":"sh/dk721crm","slide":3,"text":"巴黎爱乐音乐厅","textPreview":"巴黎爱乐音乐厅","textChars":7,"textLines":1,"bbox":[780,76,435,78]}
+{"kind":"textbox","id":"sh/elg3ahs7","slide":3,"text":"嵌套空间分配早期与后期声能","textPreview":"嵌套空间分配早期与后期声能","textChars":13,"textLines":1,"bbox":[780,158,435,44]}
+{"kind":"shape","id":"sh/zmpk3m9s","slide":3,"bbox":[780,214,430,0]}
+{"kind":"textbox","id":"sh/vatwnq50","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[780,236,48,50]}
+{"kind":"textbox","id":"sh/a9kvulof","slide":3,"text":"内层","textPreview":"内层","textChars":2,"textLines":1,"bbox":[842,237,360,28]}
+{"kind":"textbox","id":"sh/xcvep0n6","slide":3,"text":"楼座前沿、分区墙和云状反射体提供早期反射，保持声音清晰。","textPreview":"楼座前沿、分区墙和云状反射体提供早期反射，保持声音清晰。","textChars":28,"textLines":1,"bbox":[842,267,365,74]}
+{"kind":"textbox","id":"sh/wb2dwv6l","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[780,350,48,50]}
+{"kind":"textbox","id":"sh/nmtwjqp4","slide":3,"text":"外层","textPreview":"外层","textChars":2,"textLines":1,"bbox":[842,351,360,28]}
+{"kind":"textbox","id":"sh/mlkvqloj","slide":3,"text":"声音绕过悬浮楼座进入外围容积，形成较晚反射和包围感。","textPreview":"声音绕过悬浮楼座进入外围容积，形成较晚反射和包围感。","textChars":26,"textLines":1,"bbox":[842,381,365,74]}
+{"kind":"textbox","id":"sh/98belg7u","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[780,464,48,50]}
+{"kind":"textbox","id":"sh/872dsv6p","slide":3,"text":"隔声","textPreview":"隔声","textChars":2,"textLines":1,"bbox":[842,465,360,28]}
+{"kind":"textbox","id":"sh/7idwva58","slide":3,"text":"“盒中盒”围护构造削弱周边道路与演出设施噪声对弱音的掩蔽。","textPreview":"“盒中盒”围护构造削弱周边道路与演出设施噪声对弱音的掩蔽。","textChars":29,"textLines":1,"bbox":[842,495,365,74]}
+{"kind":"shape","id":"sh/6h4v25on","slide":3,"bbox":[780,604,430,76]}
+{"kind":"textbox","id":"sh/2x8zu98v","slide":3,"text":"听觉结果：舞台声音近而明确，混响从周围展开，形成沉浸感","textPreview":"听觉结果：舞台声音近而明确，混响从周围展开，形成沉浸感","textChars":27,"textLines":1,"bbox":[800,616,390,52]}
+{"kind":"textbox","id":"sh/3yhgnepg","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1214,680,32,18]}
+{"kind":"image","id":"im/e54z2loz","slide":3,"name":"","alt":"巴黎爱乐音乐厅悬浮楼座与云状反射体","bbox":[0,0,730,720]}
+{"kind":"notes","id":"nt/qpg933","slide":3,"text":"内容来源：\nhttps://philharmoniedeparis.fr/en/discover/philharmonie\nhttps://marshallday.squarespace.com/news-posts/eeting-of-minds-philharmonie-de-paris\n图片来源：Architectural Record，https://www.architecturalrecord.com/articles/11660-philharmonie-de-paris-grande-salle"}
+{"kind":"slide","id":"sl/3lqh22","slide":4,"title":"三种空间组织声音的方式","textShapes":4}
+{"kind":"textbox","id":"sh/4jmx0by9","slide":4,"text":"三种空间组织声音的方式","textPreview":"三种空间组织声音的方式","textChars":11,"textLines":1,"bbox":[68,42,850,60]}
+{"kind":"textbox","id":"sh/jidwrqx4","slide":4,"text":"比较重点：反射声从哪里产生、何时到达，以及空间如何调节余韵","textPreview":"比较重点：反射声从哪里产生、何时到达，以及空间如何调节余韵","textChars":29,"textLines":1,"bbox":[70,105,1040,34]}
+{"kind":"shape","id":"sh/ih4fylgj","slide":4,"bbox":[70,145,1140,0]}
+{"kind":"shape","id":"sh/wvmxwbyd","slide":4,"bbox":[68,607,1144,70]}
+{"kind":"textbox","id":"sh/vutwn6xs","slide":4,"text":"共同点：大厅容积、楼座与墙面直接参与声场组织，建筑形态本身就是声学装置。","textPreview":"共同点：大厅容积、楼座与墙面直接参与声场组织，建筑形态本身就是声学装置。","textChars":36,"textLines":1,"bbox":[94,618,1090,48]}
+{"kind":"textbox","id":"sh/atkfu1g7","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1212,688,34,18]}
+{"kind":"table","id":"tb/cfq18ne9","slide":4,"name":"","rows":5,"cols":4,"preview":"比较维度 | 卢塞恩 KKL | 丹麦广播音乐厅 | 巴黎爱乐音乐厅","bbox":[68,168,1144,410]}
+{"kind":"notes","id":"nt/3lqh22","slide":4,"text":"比较依据：前三页所列项目官方资料与声学顾问资料。\nhttps://www.kkl-luzern.ch/en/about-us/architecture-acoustics\nhttps://www.nagata-i.com/portfolio/danish-radio-concert-hall/\nhttps://philharmoniedeparis.fr/en/discover/philharmonie"}
