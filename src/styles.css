@@ -18,7 +18,31 @@
 .about.about .stats{right:58px;bottom:0}
 .about.about .stats div{min-width:98px;min-height:112px;background:#e6d7ab;padding:10px 9px}
 .about.about .stats strong,.about.about .stats span{color:#171b20}
-.home .about.about .about-card{background:rgba(210,185,108,.75)}
+.home .about.about .about-card{background:rgba(210,185,108,.5)}
+/* Larger desktop opening typography, sized to the marked reference areas. */
+.home .hero .hero-foot>p{font-size:12px;line-height:1.55;letter-spacing:normal}
+.home .hero .nav-separator{color:rgba(255,255,255,.68);font-size:clamp(18px,1.45vw,28px);align-self:center}
+@media(max-width:750px){
+  .home .hero .nav-separator{display:none}
+  .home .hero .monogram{width:55px}
+  .home .hero .eyebrow{font-size:11px;letter-spacing:.03em}
+  .home .hero .hero-foot{gap:18px;font-size:14px}
+  .home .hero .scroll{font-size:14px}
+}
+@media(min-width:751px){
+  .home .hero{--hero-gutter:max(36px,calc((100vw - 1700px)/2))}
+  .home .hero header{align-items:flex-start}
+  .home .hero .monogram{width:clamp(75px,8vw,150px)}
+  .home .hero nav{width:clamp(360px,32vw,610px);justify-content:space-between;gap:20px;padding-top:12px}
+  .home .hero nav button{font-size:clamp(18px,1.45vw,28px);letter-spacing:.1em;padding:4px 0}
+  .home .hero .hero-content{display:block}
+  .home .hero .eyebrow{position:absolute;top:26%;left:var(--hero-gutter);margin:0;font-size:11px;letter-spacing:.03em;line-height:1.5}
+  .home .hero .hero-wordmark{position:absolute;top:40%;left:var(--hero-gutter);margin:0}
+  .home .hero .hero-foot{position:absolute;left:var(--hero-gutter);right:var(--hero-gutter);bottom:10%;margin:0;gap:32px;align-items:center}
+  .home .hero .hero-foot>p{width:clamp(240px,20vw,370px);margin:0;font-size:12px;line-height:1.55;letter-spacing:normal}
+  .home .hero .scroll{display:flex;align-items:center;justify-content:space-between;gap:20px;width:clamp(300px,26vw,490px);font-size:clamp(21px,1.8vw,36px);line-height:1.35;letter-spacing:.08em;text-align:left}
+  .home .hero .scroll i{margin:0;font-size:1.4em}
+}
 @media(min-width:751px){
   .project-group:nth-child(2) .project-overlay{overflow-y:auto}
   .project-group:nth-child(2) .project-overlay div{width:100%;min-width:0;flex-shrink:0;margin:auto;padding:16px 12px;font-size:clamp(24px,1.875vw,36px);line-height:1.15;overflow-wrap:break-word;word-break:normal}

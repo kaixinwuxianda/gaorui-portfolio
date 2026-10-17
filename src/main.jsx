@@ -38,7 +38,7 @@ const projectMap = Object.fromEntries(projectGroups.flatMap(group => group.items
 function Header({ onNavigate }) {
   const [open, setOpen] = useState(false)
   const navigate = target => { onNavigate(target); setOpen(false) }
-  return <header><button className="monogram" onClick={() => navigate('top')} aria-label="Back to top"><img src="/images/hello-mark.png" alt="Hello" decoding="async" fetchPriority="high"/></button><nav className={open ? 'open' : ''}><button onClick={() => navigate('about')}>About</button><button onClick={() => navigate('projects')}>Projects</button><button onClick={() => navigate('contact')}>Contact</button></nav><button className="menu" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? '×' : '☰'}</button></header>
+  return <header><button className="monogram" onClick={() => navigate('top')} aria-label="Back to top"><img src="/images/hello-mark.png" alt="Hello" decoding="async" fetchPriority="high"/></button><nav className={open ? 'open' : ''}><button onClick={() => navigate('about')}>About</button><span className="nav-separator" aria-hidden="true">|</span><button onClick={() => navigate('projects')}>Projects</button><span className="nav-separator" aria-hidden="true">|</span><button onClick={() => navigate('contact')}>Contact</button></nav><button className="menu" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? '×' : '☰'}</button></header>
 }
 
 function ProjectItem({ item }) {
