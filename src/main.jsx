@@ -248,8 +248,13 @@ function Project2026() {
       <ContentImage src="/images/4.4.jpg" alt="Screenshot Saved image four" />
       <ContentImage src="/images/4.5.jpg" alt="Screenshot Saved image five" />
       <ContentImage src="/images/4.6.jpg" alt="Screenshot Saved image six" />
+      <ContentImage src="/images/4.7.jpg" alt="Screenshot Saved image seven" />
+      <ContentImage src="/images/4.8.jpg" alt="Screenshot Saved image eight" />
     </div>
-    <p className="project-description">... ...</p>
+    <div className="project-description project-award-list">
+      <span>... ...</span>
+      <a className="project-award" href="http://archirookies.com/#/top" target="_blank" rel="noreferrer">该作品入围2026年东南建筑新人赛Top100 <span aria-hidden="true">↗</span></a>
+    </div>
   </main>
 }
 
@@ -345,7 +350,7 @@ function ProjectSnowFestival() {
 
 const galleryProjects = {
   'architecture-photography': { className: 'photo-columns', images: ['9.1.jpg', '9.2.jpg', '9.3.jpg', '9.4.jpg'], alt: 'Architecture photography' },
-  'graphic-works': { className: 'photo-columns', images: ['10.1.jpg', '10.2.jpg', '10.3.jpg', '10.4.jpg'], alt: 'Graphic work' },
+  'graphic-works': { className: 'photo-columns', images: ['10.1.jpg', '10.2.jpg', '10.3.jpg', '10.4.jpg', '10.5.jpg', '10.6.jpg', '10.7.jpg', '10.8.jpg', '10.9.jpg', '10.10.jpg'], alt: 'Graphic work' },
   'model-making': { className: 'gallery-single gallery-narrow', images: ['11.1.jpg', '11.2.jpg', '11.3.jpg', '11.4.jpg'], alt: 'Model making' },
   'direction-exploration': { className: 'gallery-single gallery-narrow', images: ['12.1.jpg', '12.2.jpg', '12.3.jpg'], alt: 'Direction exploration' },
 }
