@@ -350,7 +350,7 @@ function ProjectSnowFestival() {
 
 const galleryProjects = {
   'architecture-photography': { className: 'photo-columns', images: ['9.1.jpg', '9.2.jpg', '9.3.jpg', '9.4.jpg'], alt: 'Architecture photography' },
-  'graphic-works': { className: 'photo-columns', images: ['10.1.jpg', '10.2.jpg', '10.3.jpg', '10.4.jpg', '10.5.jpg', '10.6.jpg', '10.7.jpg', '10.8.jpg', '10.9.jpg', '10.10.jpg'], alt: 'Graphic work' },
+  'graphic-works': { className: 'photo-columns', pageClassName: 'project-graphic-works', images: ['10.1.jpg', '10.2.jpg', '10.3.jpg', '10.4.jpg', '10.5.jpg', '10.6.jpg', '10.7.jpg', '10.8.jpg', '10.9.jpg', '10.10.jpg'], alt: 'Graphic work' },
   'model-making': { className: 'gallery-single gallery-narrow', images: ['11.1.jpg', '11.2.jpg', '11.3.jpg', '11.4.jpg'], alt: 'Model making' },
   'direction-exploration': { className: 'gallery-single gallery-narrow', images: ['12.1.jpg', '12.2.jpg', '12.3.jpg'], alt: 'Direction exploration' },
 }
@@ -360,7 +360,7 @@ function ProjectGallery({ project }) {
   const close = () => setSelected(null)
   const imageButton = (image, index) => <button className="gallery-image" key={image} onClick={() => setSelected(image)} aria-label={`Enlarge ${project.alt} image ${index + 1}`}><ContentImage src={`/images/${image}`} alt={`${project.alt} image ${index + 1}`} /></button>
   const isTwoColumnGallery = project.className === 'photo-columns'
-  return <main className="project-page gallery-page">
+  return <main className={`project-page gallery-page ${project.pageClassName || ''}`}>
     <a className="project-back" href="/#projects">← back to portfolio</a>
     <div className={`gallery-images ${project.className}`}>
       {isTwoColumnGallery ? <><div className="gallery-column">{project.images.filter((_, index) => index % 2 === 0).map((image, index) => imageButton(image, index * 2))}</div><div className="gallery-column">{project.images.filter((_, index) => index % 2 === 1).map((image, index) => imageButton(image, index * 2 + 1))}</div></> : project.images.map(imageButton)}

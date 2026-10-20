@@ -48,6 +48,13 @@
   .project-group:nth-child(2) .project-overlay div{width:100%;min-width:0;flex-shrink:0;margin:auto;padding:16px 12px;font-size:clamp(24px,1.875vw,36px);line-height:1.15;overflow-wrap:break-word;word-break:normal}
   .project-group:nth-child(2) .project-overlay span{width:100%;font-size:1em;white-space:normal}
 }
+/* All project detail pages share a centered two-thirds content column. */
+.project-page.project-page,.detail.detail{padding-inline:calc(100% / 6)}
+.project-page .gallery-narrow{width:100%;margin-inline:0}
+.project-page .project-heading{min-width:0;overflow-wrap:anywhere}
+.project-page .project-description{max-width:100%}
+.project-page.project-graphic-works{background:#808080;color:#f5f3ee}
+.project-graphic-works .project-back{color:rgba(255,255,255,.8)}
 .construction-mark{display:inline-block;height:3em;width:auto;max-width:7em;object-fit:contain;vertical-align:text-bottom;margin-left:.45em;transform:none}
 .photo-columns>.gallery-column{display:flex;min-width:0;flex-direction:column;justify-content:space-between;gap:clamp(62px,9vw,170px)}
 .gallery-images{display:grid;margin-top:clamp(140px,18vh,265px);gap:clamp(30px,3.5vw,68px)}.photo-columns{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;column-gap:clamp(38px,4vw,76px);row-gap:clamp(62px,9vw,170px)}.gallery-single{grid-template-columns:minmax(0,1fr)}.gallery-narrow{width:66.666%;margin-left:auto;margin-right:auto}.gallery-image{display:block;border:0;padding:0;background:none;cursor:zoom-in}.gallery-image img{display:block;width:100%;height:auto}.gallery-lightbox{position:fixed;z-index:50;inset:0;display:flex;align-items:center;justify-content:center;padding:clamp(24px,5vw,80px);background:rgba(0,0,0,.88);cursor:zoom-out}.gallery-lightbox img{max-width:100%;max-height:100%;object-fit:contain;cursor:default}.lightbox-close{position:fixed;top:24px;right:30px;border:0;background:none;color:#fff;font:300 42px/1 Manrope,Arial,sans-serif;cursor:pointer}
