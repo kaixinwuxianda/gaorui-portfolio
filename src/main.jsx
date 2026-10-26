@@ -21,7 +21,7 @@ const projectGroups = [
     { label: '<2026>', slug: '2026', image: '/images/content4.jpg', title: 'Architectural Studies', hover: ['"Screenshot Saved"', '< 截屏已保存 >'] },
   ]},
   { title: '<团队项目>', items: [
-    { label: '竞赛项目', slug: 'velux', image: '/images/content5.jpg', title: '2026 VELUX', hover: ['2026 LIght of Tomorrow by VELUX'] },
+    { label: '竞赛项目', slug: 'velux', image: '/images/content5.jpg', title: '2026 VELUX', hover: ['2026 LIght of', 'Tomorrow by VELUX', '2026UIA-HYP'] },
     { label: '实习志愿活动', slug: 'bridge-village', image: '/images/content6.jpg', title: 'Wu Zhi Qiao · Qiaoshan Village', hover: ['Qiaoshan village', '桥山村项目', 'Bridge to China Annual Interflow Camp', '无止桥年度交流营'] },
     { label: '策展', slug: 'installation', image: '/images/content7.jpg', title: 'Joint Exhibition of Three Societies 2026 社团联展', hover: ['Joint Exhibition of Three Societies 2026', '社团联展'] },
     { label: '建造节', slug: 'snow-festival', image: '/images/content8.jpg', title: 'Installation setup and snow structure', hover: ['installation setup', '装置搭建', 'snow structure', '雪构节'] },
@@ -163,7 +163,7 @@ function Home() {
       <div className="about-card">
         <div className="about-visual">
           <ContentImage src="/images/portrait.jpg" alt="Gao Rui at UIA Barcelona 2026"/>
-          <ContentImage className="about-barcelona" src="/images/barcelona.png" alt="2026 UIA Barcelona"/>
+          <ContentImage className="about-barcelona" src="/images/humor-quote.png" alt="Humor is the painless contradiction between the tragic and the comic."/>
         </div>
         <div className="about-copy">
           <div className="about-identities">
@@ -264,7 +264,7 @@ function ProjectVelux() {
   return <main className="project-page project-velux">
     <a className="project-back" href="/#projects">← back to portfolio</a>
     <div className="project-heading">
-      <p className="project-meta">&lt;team work 团队项目&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;2026 VELUX&gt;</p>
+      <p className="project-meta">&lt;team work 团队项目&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;竞赛项目&gt;</p>
       <h1>&lt;Sun the Quilt&gt;</h1>
       <h2>A Domestic Composite between Indoor Climate and Public Exposure</h2>
     </div>
@@ -278,6 +278,21 @@ function ProjectVelux() {
       <a className="project-award" href={awardLink} target="_blank" rel="noreferrer">该作品获2026 VELUX Light of tomorrow全球总冠军 <span aria-hidden="true">↗</span></a>
       <a className="project-award" href={interviewLink} target="_blank" rel="noreferrer">赛后采访 <span aria-hidden="true">↗</span></a>
     </div>
+    <section className="project-entry" id="table-under-trees">
+      <div className="project-heading">
+        <h1>&lt;TABLE UNDER TREES&gt;</h1>
+        <h2>与物为春/From Little Pleasures to Shared Belonging</h2>
+      </div>
+      <div className="project-images">
+        <ContentImage src="/images/5.5.jpg" alt="TABLE UNDER TREES image one" />
+        <ContentImage src="/images/5.6.jpg" alt="TABLE UNDER TREES image two" />
+        <ContentImage src="/images/5.7.jpg" alt="TABLE UNDER TREES image three" />
+        <video src="/images/5.8.mp4" poster="/images/5.7.jpg" controls playsInline preload="none" aria-label="TABLE UNDER TREES video" />
+      </div>
+      <div className="project-description project-award-list">
+        <a className="project-award" href="https://mp.weixin.qq.com/s/MI8oW9Ujmkr25R3hxv8beA" target="_blank" rel="noreferrer">本项目获2026UIA-UYP霍普杯二等奖 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
 }
 

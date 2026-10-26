@@ -50,6 +50,7 @@
 }
 /* All project detail pages share a centered two-thirds content column. */
 .project-page.project-page,.detail.detail{padding-inline:calc(100% / 6)}
+.project-page.project-snow-festival{padding-inline:0}
 .project-page .gallery-narrow{width:100%;margin-inline:0}
 .project-page .project-heading{min-width:0;overflow-wrap:anywhere}
 .project-page .project-description{max-width:100%}
